@@ -23,16 +23,14 @@ body{
     align-items: center;
 }
 .perfume-card{
-    /* height: 100vh; */
     max-width: 600px;
     display: flex;
-    /* align-items: center; */
     justify-content: center;
     background-color: var(--White);
     border-radius: 10px;
     margin: 0 auto;
     width: 100%;
-    overflow: hidden;
+    overflow: hidden; 
 }
 .perfume-image img{
     width: 100%;
@@ -88,4 +86,22 @@ button{
 }
 .perfume-image{
     width: 50%;
+}
+@media (max-width: 768px) 
+{
+.perfume-card{
+    flex-direction: column;
+    margin: 0px 10px;
+    }
+.perfume-content{
+    width: 100%;
+    padding: 0px 18px;
+}
+.perfume-image{
+    width: 100%;
+}
+h1{
+    font-size: 35px;
+    line-height: 30px;
+}
 }
